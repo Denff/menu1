@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  width: auto;
+  padding: 0 10px;
+  max-width: 100%;
+
+  @include min-screen(992px) {
+	  max-width: 1100px;
+  }
+}
+.noscroll {}
+.table-wrapper {overflow: auto;}
+a.lightgallery {border-bottom: none;}
+ul.slick-dots li button, .slick-slide, .slick-arrow {outline: none;}
