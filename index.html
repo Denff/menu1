@@ -12,121 +12,6 @@
 
 <body>
     <!-- build:remove-->
-    <!-- перелинковка страниц для верстки-->
-    <style>
-        .gulp-pages {
-            position: fixed;
-            z-index: 999;
-            top: 0;
-            left: 0;
-            background-color: lightgray;
-        }
-
-        .gulp-pages input {
-            display: none;
-        }
-
-        .gulp-pages label {
-            font-size: 18px;
-            color: black;
-            padding: 10px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-
-        .gulp-pages label span.name {
-            margin-right: 10px;
-            line-height: 1;
-        }
-
-        .gulp-pages label span.burger {
-            height: 2px;
-            width: 24px;
-            margin-top: 1px;
-            background-color: black;
-            display: inline-block;
-            position: relative;
-        }
-
-        .gulp-pages label span.burger:before,
-        .gulp-pages label span.burger:after {
-            content: '';
-            position: absolute;
-            right: 0;
-            left: 0;
-            background-color: black;
-            height: 2px;
-            width: 100%;
-            margin: auto;
-            transition: all 0.25s ease-in-out;
-        }
-
-        .gulp-pages .burger::before {
-            top: -6px;
-        }
-
-        .gulp-pages .burger::after {
-            bottom: -6px;
-        }
-
-        .gulp-pages__inner {
-            display: none;
-            position: absolute;
-            top: 34px;
-            left: 0;
-            z-index: 999;
-            background-color: lightgray;
-            padding: 15px;
-        }
-
-        .gulp-pages__pages {
-            display: flex;
-        }
-
-        .gulp-pages #checkbox-gulp-pages:checked+.gulp-pages__inner {
-            display: flex;
-        }
-
-        .gulp-pages ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .gulp-pages ul li {
-            margin: 0 0 10px;
-            padding: 0;
-        }
-
-        .gulp-pages ul li:before {
-            display: none;
-        }
-
-        .gulp-pages a {
-            transition: all 0.2s;
-            border: none;
-            line-height: 1;
-            white-space: nowrap;
-            color: inherit;
-        }
-
-        .gulp-pages a.active {
-            color: red;
-            font-weight: 700;
-        }
-
-        .gulp-pages form {
-            margin: 0 0 20px 0;
-        }
-    </style>
-    <script>
-        [].slice.call(document.querySelectorAll('.gulp-pages a')).forEach(function(el) {
-            if (el.getAttribute('href') == location.pathname) {
-                el.classList.add('active');
-            }
-        });
-    </script><!-- КОНЕЦ: перелинковка страниц для верстки-->
     <!-- endbuild-->
     <!-- обертка контента-->
     <div class="wrapper">
@@ -134,7 +19,7 @@
         <!-- nav-->
         <nav class="nav">
             <div class="nav__inner container">
-                <div class="nav__image"><img src="../img/berry.png" alt=""></div>
+                <div class="nav__image"><img src="img/berry.png" alt=""></div>
                 <div class="nav__title">Меню</div>
                 <div class="nav__list">
                     <div class="nav__item">
@@ -164,11 +49,9 @@
                 </div>
             </div>
         </nav><!-- КОНЕЦ: nav-->
-        <div>контент</div>
     </div><!-- КОНЕЦ: обертка контента-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css/normalize.min.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/lightgallery.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.11.0/dist/jquery.min.js"></script>
     <script src="js/nav.js"></script>
