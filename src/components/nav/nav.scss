@@ -277,5 +277,6 @@
 	width: 18px;
 	height: 18px;
 	@include svgsprite(close);
+	cursor: pointer;
 
 }
